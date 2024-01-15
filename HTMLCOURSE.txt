@@ -1,0 +1,53 @@
+There are two types of selectors they are direct child selector and descendent selector.
+direct child selector:
+article > p{}
+descendent selector:
+article p{}
+we can give more than one class name to an element
+<div class="name1 name2"></div>
+for css we can access this element using 
+.name1.name2{}
+There are other types of css selectors they are
+adjacent selectors +
+general sibling selector ~
+
+suppose we have a section tag with class name cls and a div tag whose class name is also cls inorder to access div tag with class name cls we have to use
+
+div.cls{}
+
+we know we can make anchor tag both as inline and block level element by default it appears as an inline element inorder to convert it into block level element we have to use display:block; it will be converted into block level element.
+:active - is used when we click an element but haven't released the click.
+:hover - is used when we hover over the element.
+:nth-child
+real usage
+header li:nth-child(3){}
+header div:nth-child(odd){} to access all odd numbered element.
+
+CONFLICT RESOLUTION:
+if there is an conflict in the declaration of styling there are various conflict resolution mechanisms we can use to resolve this they are merge, last one wins,inheritance,specificity(most specific css rule wins).
+all css rules are by default follows inheritance which means if any styling is applied to parent then by default it is applied to its child and its grandchilds automatically.
+
+specificity score:
+style attribute inside a tag,ID tag,{class,pseudo-class},# of elements
+based on this calculate the score if the element present it will get a one as value if not it will get zero as value.
+for example:
+div p{}
+for this there is no inline styling therefore 0, no id tag 0 no class 0 and then it has two tags div and p therefore 2 so the final score is 2.
+like this we have to calculate the score and the largest one wins.
+final score is 0002
+
+Relative sizing:
+which means adding up font size for example if 
+body{
+font-size:120%;
+}
+<body>
+<div style="font-size:2em;">content</div>
+</body>
+final font size will be both the 120% and 2em both added up this is known as adding up font size. and we can also decrease the font size for example 0.5em will reduce the font size to its half.
+
+
+div #myID{} score is 0101=101
+div .para p{} score is 0012=12
+largest one is 101 and it wins.
+and there is one exception which is the exclamation mark which means it doesn't matter what is the specificity is it will override all the styling and implement the specified one.
