@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.section{
+    position:relative;
+    height:50px;
+    
+    background-color:burlywood; 
+}
+.sec-title{
+    position:absolute;
+    float:right;
+    right:0px;
+    top:0px;
+    text-align: center;
+    width: 100px;
+    display:block;
+    border:1px solid black;
+}
+.t1{
+    background-color: lightcyan;
+    color:#1f1f1f;
+}
+.t2{
+    background-color:gold;
+    color:#1f1f1f;
+}
+.t3{
+    background-color:lightgreen;
+    color:#1f1f1f;
+}
+.content{
+    color:crimson;
+}
