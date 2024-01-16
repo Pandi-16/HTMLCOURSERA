@@ -6,9 +6,18 @@
 }
 .section{
     position:relative;
-    height:50px;
-    
-    background-color:burlywood; 
+    float:left;
+    border: 1px solid black;
+    height: 150px;
+    margin-left:2%;
+    margin-bottom: 2%;
+    padding: 35px 4px 10px 8px;  
+    background-color:burlywood;
+}
+.site-title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 .sec-title{
     position:absolute;
@@ -19,6 +28,12 @@
     width: 100px;
     display:block;
     border:1px solid black;
+}
+.container{
+    padding: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
 }
 .t1{
     background-color: lightcyan;
@@ -33,5 +48,25 @@
     color:#1f1f1f;
 }
 .content{
-    color:crimson;
+    color:black;
+    ;
+}
+
+@media (min-width:992px){
+    .section{
+        width:31.3%;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .section{
+        width:48%;
+    }
+    .s3{
+        width:100%;
+    }
+}
+@media (max-width:767px){
+    .section{
+        width:100%;
+    }
 }
